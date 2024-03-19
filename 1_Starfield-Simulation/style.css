@@ -1,0 +1,40 @@
+:root {
+  --timeles-noir: #1b1b1b;
+  --ethereal-ivory: #e4e4de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--timeles-noir);
+  padding-top: 20px;
+}
+
+h1 {
+  color: var(--ethereal-ivory);
+  text-align: center;
+  z-index: 1;
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
